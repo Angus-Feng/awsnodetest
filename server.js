@@ -12,8 +12,6 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to homework-forever application." });
 });
 
-require("./app/routes/todo.routes.js")(app);
-// set port, listen for requests
 app.listen(3000, () => {
     console.log("running.");
   });
